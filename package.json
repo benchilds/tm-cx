@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/benchilds/tm-cx/issues"
   },
-  "homepage": "https://github.com/benchilds/tm-cx#readme"
+  "homepage": "https://github.com/benchilds/tm-cx#readme",
+  "dependencies": {
+    "bootstrap-css-only": "^4.4.1"
+  }
 }
