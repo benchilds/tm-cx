@@ -28,6 +28,7 @@
     "concat": "npm run concat:bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "build",
+    "predeploy": "npm run scss && npm run concat",
     "deploy": "gh-pages -d dist"
   }
 }
