@@ -2,10 +2,8 @@
   "name": "tm-cx",
   "version": "1.0.0",
   "description": "Evolving the thinkmoney Customer Experience",
+  "homepage": "https://benchilds.github.io/tm-cx/",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benchilds/tm-cx.git"
@@ -15,8 +13,18 @@
   "bugs": {
     "url": "https://github.com/benchilds/tm-cx/issues"
   },
-  "homepage": "https://github.com/benchilds/tm-cx#readme",
   "dependencies": {
     "bootstrap-css-only": "^4.4.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "http-server": "^0.12.3",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "scss": "node-sass -o dist/css assets/scss/style.scss",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "build",
+    "deploy": "gh-pages -d build"
   }
 }
