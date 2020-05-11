@@ -1,0 +1,19 @@
+{
+  "name": "tm-cx",
+  "version": "1.0.0",
+  "description": "Evolving the thinkmoney Customer Experience",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benchilds/tm-cx.git"
+  },
+  "author": "Ben Childs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benchilds/tm-cx/issues"
+  },
+  "homepage": "https://github.com/benchilds/tm-cx#readme"
+}
