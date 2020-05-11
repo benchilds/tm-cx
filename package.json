@@ -29,7 +29,7 @@
     "start": "concurrently \"npm run http-server\" \"npm run live-reload\" \"npm run concat\" \"npm run copyfiles\" \"npm run scss\"",
     "http-server": "http-server ./dist -a localhost -p 8000 -c0",
     "live-reload": "live-reload --port=8001 dist/",
-    "scss": "node-sass -o dist/css assets/scss/style.scss -w",
+    "scss": "node-sass -o dist/css assets/scss/style.scss",
     "concat": "npm run concat:bootstrap",
     "concat:bootstrap": "concat -o dist/css/bootstrap.css node_modules/bootstrap-css-only/css/*.min.css",
     "copyfiles": "npm run copyfiles:css-maps",
