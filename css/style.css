@@ -1,2 +1,159 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
 body {
-  background-color: grey; }
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: #fafafa; }
+
+.cmp {
+  align-content: center;
+  border: 0.5rem solid #fafafa;
+  padding: 1.0rem;
+  text-align: center; }
+
+.bg-black {
+  background-color: #222222; }
+
+.bg-grey1 {
+  background-color: #595959; }
+
+.bg-grey2 {
+  background-color: #909090; }
+
+.bg-grey3 {
+  background-color: #c8c8c8; }
+
+.bg-grey4 {
+  background-color: #f5f5f5; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-offwhite {
+  background-color: #fafafa; }
+
+.bg-bluesan {
+  background-color: #00577a; }
+
+.bg-bluebridge {
+  background-color: #13628c; }
+
+.bg-bluebright {
+  background-color: #24abe0; }
+
+.bg-orange {
+  background-color: #e7762c; }
+
+.bg-purple {
+  background-color: #7060eb; }
+
+.btn {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(165, 231, 243, 0.1) -2px -2px 8px 0px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  background-image: linear-gradient(45deg, #24abe0 0%, #7060eb 100%);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 36px;
+  padding: 20px 60px;
+  text-decoration: none; }
