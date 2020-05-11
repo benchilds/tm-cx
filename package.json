@@ -17,14 +17,17 @@
     "bootstrap-css-only": "^4.4.1"
   },
   "devDependencies": {
+    "concat": "^1.0.3",
     "gh-pages": "^2.2.0",
     "http-server": "^0.12.3",
     "node-sass": "^4.14.1"
   },
   "scripts": {
     "scss": "node-sass -o dist/css assets/scss/style.scss",
+    "concat:bootstrap": "concat -o dist/css/bootstrap.css node_modules/bootstrap-css-only/css/*.min.css",
+    "concat": "npm run concat:bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   }
 }
