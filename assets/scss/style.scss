@@ -4,12 +4,63 @@
 
 // HTML ------------------------------------------------------------------------
 
-body { background-color: blue; }
+body {
+  background-color: $offwhite;
+}
 
 // BOOTSTRAP OVER-RIDES --------------------------------------------------------
 
 // GENERAL STYLES --------------------------------------------------------------
 
+// STYLEGUIDE / LAYOUT ---------------------------------------------------------
+
+.cmp {
+  align-content: center;
+  border: 0.25rem solid $offwhite;
+  padding: 1.0rem; // @extend .p-2
+  text-align: center;
+}
+
 // THINKMONEY ------------------------------------------------------------------
+
+// Background colours
+
+.bg-black { background-color: $black; }
+.bg-grey1 { background-color: $grey1; }
+.bg-grey2 { background-color: $grey2; }
+.bg-grey3 { background-color: $grey3; }
+.bg-grey4 { background-color: $grey4; }
+.bg-white { background-color: $white; }
+.bg-offwhite { background-color: $offwhite; }
+.bg-bluesan { background-color: $bluesan; }
+.bg-bluebridge { background-color: $bluebridge; }
+.bg-bluebright { background-color: $bluebright; }
+.bg-orange { background-color: $orange; }
+.bg-purple { background-color: $purple; }
+
+// Buttons
+
+.btn {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(165, 231, 243, 0.1) -2px -2px 8px 0px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  // font-family: BrandonText-Regular;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  background-image: linear-gradient(45deg, rgb(36, 171, 224) 0%, rgb(112, 96, 235) 100%);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 36px;
+  padding: 20px 60px;
+  text-decoration: none;
+}
 
 // -----------------------------------------------------------------------------
