@@ -5,7 +5,6 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -86,9 +85,18 @@ hr {
 input, select {
   vertical-align: middle; }
 
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/BrandonText-Regular.otf); }
+
+@font-face {
+  font-family: 'Brandon';
+  src: url(../fonts/BrandonText-Bold.otf);
+  font-weight: bold; }
+
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Brandon', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
