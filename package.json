@@ -13,26 +13,30 @@
   "bugs": {
     "url": "https://github.com/benchilds/tm-cx/issues"
   },
-  "dependencies": {
-    "bootstrap-css-only": "^4.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "bootstrap-css-only": "^4.4.1",
     "concat": "^1.0.3",
+    "concurrently": "^5.2.0",
     "copyfiles": "^2.2.0",
     "gh-pages": "^2.2.0",
     "http-server": "^0.12.3",
-    "node-sass": "^4.14.1"
+    "live-reload": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2"
   },
   "scripts": {
-    "start": "http-server ./dist -a localhost -p 8000 -c-1",
-    "scss": "node-sass -o dist/css assets/scss/style.scss",
-    "concat:bootstrap": "concat -o dist/css/bootstrap.css node_modules/bootstrap-css-only/css/*.min.css",
+    "start": "concurrently \"npm run http-server\" \"npm run live-reload\" \"npm run concat\" \"npm run copyfiles\" \"npm run scss\"",
+    "http-server": "http-server ./dist -a localhost -p 8000 -c0",
+    "live-reload": "live-reload --port=8001 dist/",
+    "scss": "node-sass -o dist/css assets/scss/style.scss -w",
     "concat": "npm run concat:bootstrap",
-    "copyfiles:css-maps": "copyfiles -f node_modules/bootstrap-css-only/css/*.css.map dist/css",
+    "concat:bootstrap": "concat -o dist/css/bootstrap.css node_modules/bootstrap-css-only/css/*.min.css",
     "copyfiles": "npm run copyfiles:css-maps",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "build",
-    "predeploy": "npm run scss && npm run concat && npm run copyfiles",
-    "deploy": "gh-pages -d dist"
+    "copyfiles:css-maps": "copyfiles -f node_modules/bootstrap-css-only/css/*.css.map dist/css",
+    "watch": "npm run watch:scss",
+    "watch:scss": "onchange 'assets/scss/style.scss' -- npm run scss",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run scss && npm run concat && npm run copyfiles"
   }
 }
