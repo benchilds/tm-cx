@@ -30,14 +30,14 @@
     "http-server": "http-server ./dist -a localhost -p 8000 -c0",
     "live-reload": "live-reload --port=8001 dist/",
     "scss": "node-sass -o dist/css assets/scss/style.scss -w",
+    "scss:deploy": "node-sass -o dist/css assets/scss/style.scss",
     "concat": "npm run concat:bootstrap",
     "concat:bootstrap": "concat -o dist/css/bootstrap.css node_modules/bootstrap-css-only/css/*.min.css",
     "copyfiles": "npm run copyfiles:css-maps && npm run copyfiles:fonts",
     "copyfiles:css-maps": "copyfiles -f node_modules/bootstrap-css-only/css/*.css.map dist/css",
     "copyfiles:fonts": "copyfiles -f assets/fonts/*.otf dist/fonts",
     "watch": "npm run watch:scss",
-    "watch:scss": "onchange 'assets/scss/style.scss' -- npm run scss",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run scss && npm run concat && npm run copyfiles"
+    "predeploy": "npm run scss:deploy && npm run concat && npm run copyfiles"
   }
 }
