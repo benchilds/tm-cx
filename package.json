@@ -20,7 +20,7 @@
     "concat": "^1.0.3",
     "gh-pages": "^2.2.0",
     "http-server": "^0.12.3",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "scss": "node-sass -o dist/css assets/scss/style.scss",
